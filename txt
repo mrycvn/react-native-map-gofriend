@@ -1,0 +1,59 @@
+
+import React from 'react';
+import { StyleSheet, SafeAreaView,Dimensions,View,ActivityIndicator} from 'react-native';
+import {connect} from 'react-redux';
+
+
+const height = Dimensions.get('window').height;
+const width = Dimensions.get('window').width;
+
+
+ class FindFriend extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {   
+
+    };
+}
+
+componentDidMount() {
+
+}
+
+
+
+
+
+ Spinner = () => (
+    <View style={{ alignItems: 'center',justifyContent: 'center', position: 'absolute',top: 0,left: 0, backgroundColor:'#223343',height: '100%',width: '100%'}}>
+        <ActivityIndicator size="large" color={'white'} />
+    </View> 
+  );
+
+   render(){ 
+    return(
+    <SafeAreaView style={{flex: 1,width:width,height:height}}>
+             
+     </SafeAreaView> 
+    )
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    height:height,
+    width:width,
+  },
+});
+
+function mapStateToProps(state) {
+  return {
+    id: state.staffid,
+    key:state.key
+  };
+}
+export default connect(mapStateToProps)(FindFriend);
+ 
