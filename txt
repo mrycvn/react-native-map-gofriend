@@ -1,6 +1,6 @@
 // TODO  
-// react-native-maps-directions kütüphanesi kullanabilmeek için bir key edinin;
-// https://console.developers.google.com/apis/
+// react-native-maps-directions kütüphanesi kullanabilmeek için bir key edinmelisiniz.Linkteki adımları izleyin;
+// https://developers.google.com/maps/get-started?utm_source=devtools
 
 
  
